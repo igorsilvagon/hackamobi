@@ -107,7 +107,7 @@ body {
      // Android
      "Roboto",
      // Basic web fallback
-     "Helvetica Neue", Arial, sans-serif !default;*/ }
+     'Quicksand', sans-serif !default;*/ }
 
 .text-3 {
   color: black; }
