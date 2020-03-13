@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        
+            Catalog |
+        
+
+        Hackathon de Mobilidade Urbana - HackEMTU 2018
+    </title>
+    <meta name="description" content="O HackaMobi é um hackathon voltado para a mobilidade urbana com foco em inovação em transporte público.
+">
+    <!-- <link rel="canonical" href="http://localhost:4000/catalog/"> -->
+
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://bootswatch.com/journal/bootstrap.min.css">
+    <!-- TODO  get a custom embed code -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/hackemtu-data-catalog/css/main.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+    <!-- Custom styles for each page -->
+    
+
+
+    <!--<link rel="icon" type="image/png" href="/hackemtu-data-catalog/img/squarelogo.png">-->
+</head>
+
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-red navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/hackemtu-data-catalog/">
+                <span style="padding-top:16px" class="navbar-brand" >HackaMobi</span>
+                <!--<img class="navbar-brand" src="/hackemtu-data-catalog/img/logo.svg" href="/"/>-->
+            </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li
+                
+                >
+                
+                <a href="/hackemtu-data-catalog/">
+                    Início
+                
+                </a>
+            </li>
+            
+                <li
+                
+                class="active"
+                
+                >
+                
+                <a href="/hackemtu-data-catalog/catalog/">
+                    Catálogo
+                
+                </a>
+            </li>
+            
+                <li
+                
+                >
+                
+                <a href="/hackemtu-data-cataloghttps://hackemtu.com">
+                    HackaMobi
+                
+                </a>
+            </li>
+            
+                <li
+                
+                >
+                
+                <a href="https://github.com/jmfly/hackemtu-data-catalog">
+                    GitHub
+                
+                </a>
+            </li>
+            
+            
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+
+<!--<div id="main-container">-->
+    <div class="container">
+
+
+  <h1 class="page-title centered">Catálogo de dados</h1>
+
+  <p class="lead">
+    Esse é o inventário de dados abertos para a Hackatona do metrô de São Paulo - HackaMobi, apresentando <span id="catalog-count">dezenas de</span>
+    datasets públicos de entidades do transporte público do município e região metropolitana de São Paulo.
+  <br><br>
+
+  <span id="category-desc">
+  </span>
+
+  </p>
+
+  <!-- Search box -->
+  <div class="input-group">
+    <span class="input-group-addon">
+        <i class="fa fa-search"></i>
+    </span>
+    <input type="text" id="catalog-search-text" class="form-control" placeholder="Digite para pesquisar datasets">
+  </div>
+
+  <br />
+
+  <div class="col-sm-3">
+    <h3 class="page-header">Categorias</h3>
+    <div class="list-group" id="filter-category">
+    
+      <a href="/hackemtu-data-catalog/catalog/index.html?category=emtu" class="list-group-item" id="filter-category-emtu">
+        <i class="fa fa-fw fa-bus"></i> &nbsp; EMTU
+      </a>
+    
+      <a href="/hackemtu-data-catalog/catalog/index.html?category=emdec" class="list-group-item" id="filter-category-emdec">
+        <i class="fa fa-fw fa-pencil-square-o"></i> &nbsp; EMDEC
+      </a>
+    
+      <a href="/hackemtu-data-catalog/catalog/index.html?category=unicamp" class="list-group-item" id="filter-category-unicamp">
+        <i class="fa fa-fw fa-graduation-cap"></i> &nbsp; Unicamp
+      </a>
+    
+      <a href="/hackemtu-data-catalog/catalog/index.html?category=prefeiturasp" class="list-group-item" id="filter-category-prefeiturasp">
+        <i class="fa fa-fw fa-university"></i> &nbsp; Prefeitura SP
+      </a>
+    
+      <a href="/hackemtu-data-catalog/catalog/index.html?category=sptrans" class="list-group-item" id="filter-category-sptrans">
+        <i class="fa fa-fw fa-bus"></i> &nbsp; SPTrans
+      </a>
+    
+      <a href="/hackemtu-data-catalog/catalog/index.html?category=seade" class="list-group-item" id="filter-category-seade">
+        <i class="fa fa-fw fa-users"></i> &nbsp; SEADE
+      </a>
+    
+      <a href="/hackemtu-data-catalog/catalog/index.html?category=scipopulis" class="list-group-item" id="filter-category-scipopulis">
+        <i class="fa fa-fw fa-server"></i> &nbsp; Scipopulis
+      </a>
+    
+      <a href="/hackemtu-data-catalog/catalog/index.html?category=outros" class="list-group-item" id="filter-category-outros">
+        <i class="fa fa-fw fa-archive"></i> &nbsp; Outros
+      </a>
+    
+    </div>
+    <h3 class="page-header">Tipos</h3>
+    <div class="list-group" id="filter-type">
+        
+          <a href="/hackemtu-data-catalog/catalog/index.html?type=API" class="list-group-item" id="filter-type-API">
+            <i class="fa fa-fw fa-tachometer"></i> &nbsp; API
+          </a>
+        
+          <a href="/hackemtu-data-catalog/catalog/index.html?type=Database" class="list-group-item" id="filter-type-Database">
+            <i class="fa fa-fw fa-database"></i> &nbsp; Database
+          </a>
+        
+          <a href="/hackemtu-data-catalog/catalog/index.html?type=CSV" class="list-group-item" id="filter-type-CSV">
+            <i class="fa fa-fw fa-table"></i> &nbsp; CSV
+          </a>
+        
+          <a href="/hackemtu-data-catalog/catalog/index.html?type=Excel" class="list-group-item" id="filter-type-Excel">
+            <i class="fa fa-fw fa-file-excel-o"></i> &nbsp; Excel
+          </a>
+        
+          <a href="/hackemtu-data-catalog/catalog/index.html?type=Graph" class="list-group-item" id="filter-type-Graph">
+            <i class="fa fa-fw fa-line-chart"></i> &nbsp; Graph
+          </a>
+        
+          <a href="/hackemtu-data-catalog/catalog/index.html?type=HTML" class="list-group-item" id="filter-type-HTML">
+            <i class="fa fa-fw fa-code"></i> &nbsp; HTML
+          </a>
+        
+          <a href="/hackemtu-data-catalog/catalog/index.html?type=PDF" class="list-group-item" id="filter-type-PDF">
+            <i class="fa fa-fw fa-file-pdf-o"></i> &nbsp; PDF
+          </a>
+        
+          <a href="/hackemtu-data-catalog/catalog/index.html?type=Diversos" class="list-group-item" id="filter-type-Diversos">
+            <i class="fa fa-fw fa-code"></i> &nbsp; Diversos
+          </a>
+        
+    </div>
+  </div>
+  <div class="col-sm-9">
+      <div class="alert alert-danger hidden" id="catalog-error">
+        Nenhum dataset encontrado!
+      </div>
+       <div id="catalog-results">
+            <!-- search results here -->
+       </div>
+  </div>
+</div>
+
+<!--</div>-->
+
+  <div class="footer">
+  <div class="container">
+
+      <img class="brandlogo" style="width:80%" src="/hackemtu-data-catalog/img/brand/hachamobi_banner.svg">
+      <br>
+      <p class="text-muted">
+          Copyright &copy;2018 HackEMTU  (fork projeto <a href="https://github.com/Maronato/transparencia-data-catalog">Transparência Unicamp</a>).
+
+  </div>
+</div>
+
+
+  <!-- jQuery -->
+<script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    crossorigin="anonymous"></script>
+
+<!-- Bootstrap -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Custom scripts for each page -->
+
+    <script src="https://d3js.org/d3-collection.v1.min.js"></script>
+
+    <script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
+
+    <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+
+    <script src="https://d3js.org/d3-request.v1.min.js"></script>
+
+    <script src="https://d3js.org/d3-selection.v1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+
+    <script src="/hackemtu-data-catalog/js/catalog.js"></script>
+
+
+
+</body>
+</html>

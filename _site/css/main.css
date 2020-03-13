@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/* new styles */
+.text-centered {
+  text-align: center; }
+
+.text-white {
+  color: white !important; }
+
+/* old styles */
+#main-image {
+  max-height: 128px; }
+
+.portfolio-image {
+  max-width: 25%;
+  margin: 1em; }
+
+@media (min-width: 480px) {
+  #jumbotron h2 {
+    font-size: 4em !important; }
+
+  #jumbotron h3 {
+    font-size: 2em !important; } }
+.clickable {
+  cursor: pointer; }
+
+.img-padding {
+  padding: 4px; }
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  /* Margin bottom by footer height + some padding */
+  margin-bottom: 80px; }
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 80px;
+  background-color: white;
+  text-align: center; }
+
+.container p {
+  margin: 20px 0; }
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.navbar-brand {
+  padding: 0px;
+  padding-left: 15px; }
+
+.navbar .navbar-collapse {
+  padding-right: 15px; }
+
+.title {
+  text-align: center;
+  padding: 0px;
+  margin-bottom: 2em; }
+
+.centered {
+  text-align: center; }
+
+#backdrop {
+  min-height: 300px; }
+
+/* Transparência Colors */
+.navbar-red {
+  background-color: #1B75BC;
+  border-color: #1B75BC; }
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #1B75BC;
+  border-color: #1B75BC; }
+
+.text-primary {
+  color: #1B75BC; }
+
+.navbar-red .navbar-nav > .active > a, .navbar-red .navbar-nav > .active > a:hover, .navbar-red .navbar-nav > .active > a:focus {
+  background-color: #1B75BC; }
+
+/* Transparência tags */
+p.label {
+  margin-right: 5px; }
+
+.brandlogo {
+  width: 120px;
+  padding: 5px;
+  margin-left: 15px; }
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  /*   // Safari for OS X and iOS (San Francisco)
+     -apple-system,
+     // Chrome >= 56 for OS X (San Francisco), Windows, Linux and Android
+     system-ui,
+     // Chrome < 56 for OS X (San Francisco)
+     BlinkMacSystemFont,
+     // Windows
+     "Segoe UI",
+     // Android
+     "Roboto",
+     // Basic web fallback
+     "Helvetica Neue", Arial, sans-serif !default;*/ }
+
+.text-3 {
+  color: black; }

@@ -1,0 +1,31 @@
+---
+# SCSS for index.html
+---
+@charset "utf-8";
+
+nav.navbar {
+    margin-bottom: -60px !important;
+    padding-bottom: -100;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.search_ {
+  position: absolute;
+  left: 0;
+  top: -50px;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.backdrop {
+    background-image: url('{{ site.baseurl }}/img/backgrounds/banner.jpg');
+//    background-image: url('{{ site.baseurl }}/img/backgrounds/fotosp.jpg');
+    background-position: center center;
+    height: 80%;
+    background-size: cover;
+}

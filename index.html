@@ -1,0 +1,57 @@
+---
+layout: default
+
+styles:
+- /css/homepage.css
+---
+
+<div class="backdrop">
+    <div class="search_">
+        <div class="container">
+
+
+            <div class="title">
+                <!-- <h2 class="text-white lead"><em>The Harvard Open Data Project presents</em></h2> -->
+
+                <img style="width:300px;" src="{{ site.baseurl }}/img/logo.svg"/>
+                <h1 class="text-3" style="margin-top:-100px;">Hackamobi - Inovação em mobilidade</h1>
+            </div>
+
+            <form action="{{ site.baseurl }}/catalog/index.html" method="GET">
+                <div class="input-group input-group-lg">
+                    <input type="text" id="catalog-search-text" class="form-control" name="q" placeholder="Procurar por base de dados">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary">
+                            <i class="fa fa-search"></i>
+                            Pesquisar
+                        </button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<br/>
+
+<div class="container">
+    <h2 class="page-header text-centered">Categorias</h2>
+    <div class="row">
+        {% for category in site.data.categories %}
+        <div class="col-xs-6 col-sm-3">
+            <a href="{{ site.baseurl }}/catalog/index.html?category={{ category.slug }}">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p class="text-center text-primary"><i class="fa fa-4x fa-{{ category.icon }}"></i></p>
+                        <h2 class="text-center lead">{{ category.name }}</h2>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+
+<br>
+<br>
+
+
+</div>
