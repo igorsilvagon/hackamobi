@@ -17,7 +17,7 @@ title: HackaMobi
 # email: your-email@domain.com
 description: >
     O HackaMobi é um hackathon voltado para a mobilidade urbana com foco em inovação em transporte público.
-baseurl: "/hackemtu-data-catalog" # the subpath of your site, e.g. /blog
+baseurl: "/hackamobi" # the subpath of your site, e.g. /blog
 url: "https://igorsilvagon.github.io" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
 # github_username:  jekyll

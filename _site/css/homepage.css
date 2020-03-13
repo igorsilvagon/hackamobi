@@ -15,7 +15,7 @@ body, html {
   color: #000; }
 
 .backdrop {
-  background-image: url("/hackemtu-data-catalog/img/backgrounds/banner.jpg");
+  background-image: url("/hackamobi/img/backgrounds/banner.jpg");
   background-position: center center;
   height: 80%;
   background-size: cover; }
