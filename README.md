@@ -9,8 +9,8 @@
 To set up our website, run the following in your terminal. You'll need to have Ruby installed (it's pre-installed on macOS and most Linux distributions.)
 
 ```
-git clone https://github.com/jmfly/hackemtu-data-catalog.git
-cd hackemtu-data-catalog
+git clone https://github.com/igorsilvagon/hackamobi.git
+cd hackamobi
 sudo gem install bundler
 bundle install
 ```
