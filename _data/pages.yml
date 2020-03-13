@@ -4,6 +4,6 @@ main:
     -   name: Catálogo
         url: /catalog/
     -   name: HackaMobi
-        url: https://hackemtu.com
+        url: https://hackamobi.com
     -   name: GitHub
-        url: https://github.com/jmfly/hackemtu-data-catalog
+        url: https://github.com/igorsilvagon/hackamobi
